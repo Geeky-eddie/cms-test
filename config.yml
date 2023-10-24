@@ -1,15 +1,15 @@
-# backend:
-#   name: github
-#   branch: master
+backend:
+  name: github
+  branch: master
 
-# media_folder: "pics/uploads"
+media_folder: "pics/uploads"
 
-# collections:
-#   - name: 'products' # The name of the collection
-#     label: 'Products' # The label shown in the CMS
-#     folder: '' # The path to the content in your project
-#     create: true
-#     fields:
-#       - { name: 'title', label: 'Title', widget: 'string' }
-#       - { name: 'description', label: 'Description', widget: 'text' }
-#       - { name: 'image', label: 'Image', widget: 'image' }
+collections:
+  - name: 'products' # The name of the collection
+    label: 'Products' # The label shown in the CMS
+    folder: '' # The path to the content in your project
+    create: true
+    fields:
+      - { name: 'title', label: 'Title', widget: 'string' }
+      - { name: 'description', label: 'Description', widget: 'text' }
+      - { name: 'image', label: 'Image', widget: 'image' }
