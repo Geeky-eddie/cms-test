@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Store</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="column.css">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/21061cd79f.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.3.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+    <style>
+        h5{
+            font-size: 1rem;
+        }
+        html{
+          scroll-behavior: smooth;
+          -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+        }
+        .b25{
+          background: #252525;
+        }
+        .b1{
+          background: #1b1b1b;
+        }
+        .outlineNone{
+          outline: none !important;
+          border:none;
+          
+        }
+        .a:hover img{
+          transition: 0.3s ease-in-out;
+            transform: scale(1.05,1.05);
+            border: 1px solid #1b1b1b !important;
+        }
+        .aBord-none:hover img{
+          transition: 0.3s ease-in-out;
+            transform: scale(1.05,1.05);
+           
+        }
+        .gotopbtn{
+          position: fixed;
+          width: 50px;
+          height: 50px;
+          bottom: 4.5%;
+          right: 5%;
+          text-decoration: none;
+          text-align: center;
+          line-height: 50px;
+          z-index: 15
+        }
+        .rounded-circle{
+            border-radius: 5%!important;
+        }
+        .border-warning{
+            color: #f87c2f !important;
+        }
+      </style>
+</head>
+<body  id="body-start">
+    <nav class="nav navisible">
+        <div class="container long" style="position: fixed;top: 0px;background-color: #EF630D; max-width: 3000px; height: 86px;">
+            <div class="logo">
+                <a href="#"><img src="pics/WhatsApp_Image_2023-10-08_at_18.44.15_5cbd9e82-removebg-preview.png" class="logg" alt="" srcset=""></a>
+            </div>
+            <div id="mainListDiv" class="main_list">
+                <ul class="navlinks">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#serve">Services</a></li>
+                    <li><a href="#freq">FAQ</a></li>
+                    <li><a href="#contactme">Contact us</a></li>
+                    <li><a style="color: #fff;
+                        font-size: 2.1rem;" href="more.htm">Store <i class="fa-solid fa-bag-shopping"></i></a></li>
+                  
+                </ul>
+            </div>
+            <span class="navTrigger">
+                <i></i>
+                <i></i>
+                <i></i>
+            </span>
+        </div>
+    </nav>
+    
+  <div id="carouselExampleFade" class="carousel slide carousel-fade " data-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active" data-interval="5000">
+        <img src="pics/EMV_Quality-_Tile_Flooring_Lexington_SC_Bathroom1.webp" class="d-block vw-100" alt="..."  style="max-height: 600px;">
+        <div class="carousel-caption d-none d-md-block">
+          <h3 class="mx-auto text-uppercase w-75 p-2 b25" style="border:5px solid #f87c2f !important; cursor: pointer;">We Produce Quality Doors and Tiles</h3>
+        </div>
+      </div>
+      <div class="carousel-item" data-interval="5000">
+        <img src="pics/EMV_Quality_Tile_Lexington_SC_Floor2.webp.crdownload" class="d-block vw-100" alt="..."  style="max-height: 600px;">
+         <div class="carousel-caption d-none d-md-block">
+          <h3 class="mx-auto text-uppercase w-75 p-2 b25" style="border:5px solid #f87c2f !important; cursor: pointer;">Buy Tiles Today</h3>
+        </div>
+      </div>
+    
+    </div>
+  </div>
+  <div class="container-fluid " style="background-color: #f87c2f;">
+    <h5 class="pt-5  text-center text-uppercase m-0  text-dark  d-block d-md-none font-weight-bolder" >We Produce Quality Products</h5>
+    <p class="text-center  text-dark pb-5 pt-3 m-0 h6  d-md-none font-weight-bolder" >Visit our store today</p>
+    <h3 class="text-center  text-dark  py-4 m-0  d-none d-md-block font-weight-bolder">Visit our store today</h3>
+  </div>
+  <!-- slider end -->
+  <!-- deligation -->
+  <div class="alert b25 text-light alert-dismissible fade show m-0 rounded-0 fixed-bottom " role="alert" style="opacity: 0.9;">
+    We Offer The Best Customer Service, Visit Our Store!!!
+    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+      <span aria-hidden="true">&times;</span>
+    </button>
+  </div>
+  <!-- deligation end -->
+  <!-- content start-->
+  <div class="container" id="depart">
+    <h3 class=" d-flex  justify-content-center  justify-content-sm-start mt-5 mb-3">Shop by Section</h3>
+    <div class="row  justify-content-center">
+     <div class="col-12 col-sm-4 col-lg">
+        <a href="testing.htm" class="a text-secondary nav-link ">
+         <div class="card border-0">
+            <img src="pics/istockphoto-1197203810-612x612.jpg" class="card-img-top rounded-circle" alt="..." style="border: 1px solid #f87c2f;">
+            <div class="card-body">
+              <h5 class="card-title text-center">Our best selling products</h5>   
+            </div>
+        </div>
+      </a> 
+      </div>
+       <div class="col-12 col-sm-4 col-lg">
+        <a href="bntiles.htm" class="a text-secondary nav-link ">
+         <div class="card border-0">
+            <img  src="pics/Bn ceramic tiles.jpg" class="card-img-top  rounded-circle" alt="..." style="border: 1px solid #f87c2f;">
+            <div class="card-body">
+              <h5 class="card-title text-center">BN ceramic tiles</h5>   
+            </div>
+        </div>
+      </a> 
+      </div>
+       <div class="col-12 col-sm-4 col-lg">
+        <a href="#" class="a text-secondary nav-link ">
+         <div class="card border-0">
+            <img src="pics/CdK turkish tiles.jpg" class="card-img-top  rounded-circle" alt="..." style="border: 1px solid #f87c2f;">
+            <div class="card-body">
+              <h5 class="card-title text-center">CDK Turkish tiles</h5>   
+            </div>
+        </div>
+      </a> 
+      </div>
+       <div class="col-12 col-sm-4 col-lg">
+        <a href="more.htm" class="a text-secondary nav-link ">
+         <div class="card border-0">
+            <img src="pics/bestwill tiles.jpg" class="card-img-top  rounded-circle" alt="..." style="border: 1px solid #f87c2f;">
+            <div class="card-body">
+              <h5 class="card-title text-center">Bestwill tiles</h5>   
+            </div>
+        </div>
+      </a> 
+      </div>
+       <div class="col-12 col-sm-4 col-lg">
+        <a href="#" class="a text-secondary nav-link ">
+         <div class="card border-0">
+            <img src="pics/time ceramic tiles.jpg" class="card-img-top rounded-circle" alt="..." style="border: 1px solid #f87c2f;">
+            <div class="card-body">
+              <h5 class="card-title text-center">Time ceramic tiles</h5>   
+            </div>
+        </div>
+      </a> 
+      </div>
+        <!-- new -->
+      <div class="d-none d-lg-block w-100"></div>
+      <!-- new -->
+       <div class="col-12 col-sm-4 col-lg">
+        <a href="#" class="a text-secondary nav-link ">
+         <div class="card border-0">
+            <img src="pics/royal family tiles.jpg" class="card-img-top rounded-circle" alt="..." style="border: 1px solid #f87c2f;">
+            <div class="card-body">
+              <h5 class="card-title text-center">Royal family tiles</h5>   
+            </div>
+        </div>
+      </a> 
+      </div>
+    
+      <div class="col-12 col-sm-4 col-lg">
+        <a href="vironytiles.htm" class="a text-secondary nav-link ">
+         <div class="card border-0">
+            <img src="pics/virony super polish.jpg" class="card-img-top rounded-circle" alt="..." style="border: 1px solid #f87c2f;">
+            <div class="card-body">
+              <h5 class="card-title text-center">Virony tiles</h5>   
+            </div>
+        </div>
+      </a> 
+      </div>
+      <div class="col-12 col-sm-4 col-lg">
+        <a href="nbtiles.htm" class="a text-secondary nav-link ">
+         <div class="card border-0">
+            <img src="pics/nb tiles.PNG" class="card-img-top rounded-circle" alt="..." style="border: 1px solid #f87c2f;">
+            <div class="card-body">
+              <h5 class="card-title text-center">NB ceramic tiles</h5>   
+            </div>
+        </div>
+      </a> 
+      </div>
+      <div class="col-12 col-sm-4 col-lg">
+        <a href="goodwilltiles.htm" class="a text-secondary nav-link ">
+         <div class="card border-0">
+            <img src="pics/goodwill tiles.jpg" class="card-img-top rounded-circle" alt="..." style="border: 1px solid #f87c2f;">
+            <div class="card-body">
+              <h5 class="card-title text-center">Goodwill glazed tiles</h5>   
+            </div>
+        </div>
+      </a> 
+      </div>
+      <div class="col-12 col-sm-4 col-lg">
+        <a href="#" class="a text-secondary nav-link ">
+         <div class="card border-0">
+            <img src="pics/Nigerian tiles.jpg" class="card-img-top rounded-circle" alt="..." style="border: 1px solid #f87c2f;">
+            <div class="card-body">
+              <h5 class="card-title text-center">Nigerian tiles</h5>   
+            </div>
+        </div>
+      </a> 
+      </div>
+      
+      <!-- another section starts here -->
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="container" id="depart">
+    <div class="row  justify-content-center">
+        <div class="col-12 col-sm-4 col-lg">
+            <a href="#" class="a text-secondary nav-link ">
+             <div class="card border-0">
+                <img src="pics/Foreign tiles.jpg" class="card-img-top rounded-circle" alt="..." style="border: 1px solid #f87c2f;">
+                <div class="card-body">
+                  <h5 class="card-title text-center">Foreign tiles</h5>   
+                </div>
+            </div>
+          </a> 
+          </div>
+          <div class="col-12 col-sm-4 col-lg">
+            <a href="securitydoor.htm" class="a text-secondary nav-link ">
+             <div class="card border-0">
+                <img src="doors/security door1.JPG" class="card-img-top rounded-circle" alt="..." style="border: 1px solid #f87c2f;">
+                <div class="card-body">
+                  <h5 class="card-title text-center">Security doors</h5>   
+                </div>
+            </div>
+          </a> 
+          </div>
+        <div class="col-12 col-sm-4 col-lg">
+            <a href="doubledoor.htm" class="a text-secondary nav-link ">
+             <div class="card border-0">
+                <img src="doors/double doors1.JPG" class="card-img-top rounded-circle" alt="..." style="border: 1px solid #f87c2f;">
+                <div class="card-body">
+                  <h5 class="card-title text-center">Double doors</h5>   
+                </div>
+            </div>
+          </a> 
+          </div>
+          <div class="col-12 col-sm-4 col-lg">
+            <a href="turkishdoor.htm" class="a text-secondary nav-link ">
+             <div class="card border-0">
+                <img src="doors/turkish door1.JPG" class="card-img-top rounded-circle" alt="..." style="border: 1px solid #f87c2f;">
+                <div class="card-body">
+                  <h5 class="card-title text-center">Turkish doors</h5>   
+                </div>
+            </div>
+          </a> 
+          </div>
+          <div class="col-12 col-sm-4 col-lg">
+            <a href="watsontime.htm" class="a text-secondary nav-link ">
+             <div class="card border-0">
+                <img src="doors/watson time.JPG" class="card-img-top rounded-circle" alt="..." style="border: 1px solid #f87c2f;">
+                <div class="card-body">
+                  <h5 class="card-title text-center">Watson security time doors</h5>   
+                </div>
+            </div>
+          </a> 
+          </div>
+        </div>
+    </div>
+         
+  
+
+
+
+
+
+
+
+
+
+
+<!-- new section starts here -->
+
+          <div class="container" id="depart">
+            <div class="row  justify-content-center">
+                <div class="col-12 col-sm-4 col-lg">
+                    <a href="toiletdoor.htm" class="a text-secondary nav-link ">
+                     <div class="card border-0">
+                        <img src="doors/Toilet door.JPG" class="card-img-top rounded-circle" alt="..." style="border: 1px solid #f87c2f;">
+                        <div class="card-body">
+                          <h5 class="card-title text-center">Toilet doors</h5>   
+                        </div>
+                    </div>
+                  </a> 
+                </div>
+          <div class="col-12 col-sm-4 col-lg">
+            <a href="foreignsecuritydoor.htm" class="a text-secondary nav-link ">
+             <div class="card border-0">
+                <img src="doors/foreign security door 88.jpg" class="card-img-top rounded-circle" alt="..." style="border: 1px solid #f87c2f;">
+                <div class="card-body">
+                  <h5 class="card-title text-center">Foreign security doors</h5>   
+                </div>
+            </div>
+          </a> 
+          </div>
+          <div class="col-12 col-sm-4 col-lg">
+            <a href="americansteeldoors.htm" class="a text-secondary nav-link ">
+             <div class="card border-0">
+                <img src="doors/American steel doors.jpeg" class="card-img-top rounded-circle" alt="..." style="border: 1px solid #f87c2f;">
+                <div class="card-body">
+                  <h5 class="card-title text-center">American steel doors</h5>   
+                </div>
+            </div>
+          </a> 
+          </div>
+          <div class="col-12 col-sm-4 col-lg">
+            <a href="woodendoors.htm" class="a text-secondary nav-link ">
+             <div class="card border-0">
+                <img src="doors/wooden doors.JPG" class="card-img-top rounded-circle" alt="..." style="border: 1px solid #f87c2f;">
+                <div class="card-body">
+                  <h5 class="card-title text-center">Wooden doors</h5>   
+                </div>
+            </div>
+          </a> 
+          </div>
+          <div class="col-12 col-sm-4 col-lg">
+            <a href="wallpanels.htm" class="a text-secondary nav-link ">
+             <div class="card border-0">
+                <img src="pics/wall panel1.1.JPG" class="card-img-top rounded-circle" alt="..." style="border: 1px solid #f87c2f;">
+                <div class="card-body">
+                  <h5 class="card-title text-center">Wall panels</h5>   
+                </div>
+            </div>
+          </a> 
+          </div>
+     
+      
+    </div>
+</div>
+ <script src="Navbar.js"></script>
+</body>
+</html>
